@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuellaVet - Control y Bienestar en un Clic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-actions"> <div class="social-logos"> <a href="https://www.facebook.com" target="_blank">
+            <img src="img/facebook-logo.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="img/instagram-logo.png" alt="Instagram" class="social-icon">
+        </a>
+        </div>
+        
+        
+        
+        <!--Barra de busqueda-->
+         <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar productos...">
+            <button onclick="buscarProductos()"><i class="fas fa-search"></i></button>
+        </div>
+        
+        
+       
+        <div class="logo">
+            <img src="img/logo.png" alt="HuellaVet">
+        </div>
+        
+        <p class="slogan">Control y Bienestar en un Clic</p>
+
+        
+        
+
+       
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Acceso</button>
+           
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="citas.html">Citas</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="img/Imagen3.jpg" class="carousel-item active" alt="Imagen 1">
+                <img src="img/imagen2.jpg" class="carousel-item" alt="Imagen 2">
+                <img src="img/Imagen3.jpg" class="carousel-item" alt="Imagen 3">
+            </div>
+        </section>
+       
+
+        <section id="productos">
+            <h2>Productos para tu mascota</h2>
+            <div class="productos-grid" id="productos-container">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Mapa del sitio</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <img src="img/logo.png" alt="Logo de la Veterinaria" class="footer-logo">
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="registro.html">Regístrate</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Dirección: Calle 123, Ciudad</p>
+                    <p>📞 Teléfono: +57 300 123 4567</p>
+                    <p>✉️ Correo: contacto@huellavet.com</p>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copy">© 2025 HuellaVet - Todos los derechos reservados</p>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="img/whatsaap-icon.png" alt="WhatsApp">
+    </a>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - HuellaVet</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <button class="logout-btn">Cerrar Sesión</button>
+    </header>
+    
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#productos">Gestión de Productos</a></li>
+                <li><a href="#usuarios">Gestión de Usuarios</a></li>
+                <li><a href="#citas">Gestión de Citas</a></li>
+                <li><a href="#campanas">Campañas de Vacunación</a></li>
+                <li><a href="#reportes">Reportes y Estadísticas</a></li>
+                <li><a href="#servicios">Gestión de Servicios</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <section id="dashboard">
+            <h2>Bienvenido, Administrador</h2>
+            <p>Accede rápidamente a las funciones del sistema.</p>
+        </section>
+        
+        <section id="gestion-productos">
+            <h2>Gestión de Productos</h2>
+        
+            <!-- Formulario para agregar productos -->
+            <form id="producto-form">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                <input type="text" id="descripcion" placeholder="Descripción" required>
+                <input type="number" id="precio" placeholder="Precio" required>
+                <input type="file" id="imagen" accept="image/*" required>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        
+            <!-- Tabla para mostrar productos -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="productos-admin">
+                    <!-- Aquí se insertarán los productos dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <table>
+                <tr><th>Nombre</th><th>Email</th><th>Acciones</th></tr>
+                <!-- Aquí se llenará dinámicamente -->
+            </table>
+        </section>
+        
+        <section id="citas">
+            <h2>Gestión de Citas</h2>
+            <table>
+                <tr><th>Cliente</th><th>Mascota</th><th>Fecha</th><th>Estado</th><th>Acciones</th></tr>
+                <!-- Aquí se llenará dinámicamente -->
+            </table>
+        </section>
+        
+        <section id="campanas">
+            <h2>Campañas de Vacunación</h2>
+            <button>Programar Nueva Campaña</button>
+        </section>
+        
+        <section id="reportes">
+            <h2>Reportes y Estadísticas</h2>
+            <p>Resumen de citas, ventas y productos más comprados.</p>
+        </section>
+        
+        <section id="servicios">
+            <h2>Gestión de Servicios</h2>
+            <button>Agregar Servicio</button>
+            <table>
+                <tr><th>Servicio</th><th>Descripción</th><th>Acciones</th></tr>
+                <!-- Aquí se llenará dinámicamente -->
+            </table>
+        </section>
+    </main>
+    
+    <script src="admin.js"></script>
+</body>
+</html>
