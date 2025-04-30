@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+div.basis-64{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 2%;
+  background-color: blueviolet;
+  text-align: center;
+  
+}
+
+div.iamgen{
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+div.basis-3xs{
+
+  background-color: blueviolet;
+  margin-left: 5%;
+  margin-right: 6%;
+
+}
+
+div.grid {
+  
+}
+
+div.pagina{
+  margin: 0 auto;
+  margin-right: -2px;
+}
+
+div.vaner{
+  margin-left: 8%;
+  margin-right: 8%;
+}
